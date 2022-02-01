@@ -1,0 +1,94 @@
+@media(max-width:500px) {
+   /* banner start */
+   .navbar .btn{
+       display: none;
+   }
+   .navbar-toggler{
+     border: none;
+     outline: none;
+   }
+   .fa-bars{
+    color: #d5a419;
+    font-size: 38px;
+   }
+   .navbar-toggler:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+    .banner{
+        height: 50vh;
+    }
+    .banner h2:nth-child(1){
+        font-size: 50px !important;
+    }
+    .banner .next{
+        height: 50vh;
+        text-align: center;
+    }
+    .banner .next h2{
+        font-size: 30px;
+    }
+    /* banner end */
+    /* welcome start */
+    .welcome .col-lg-4{
+        position: relative;
+        height: 200px;
+    }
+    /* welcome end */
+    /* services start */
+    .services{
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .services .col-lg-3{
+        width: 88%;
+        margin: 20px;
+    }
+    /* services end */
+    /* extra services start */
+    .extra-services .col-lg-4 .row{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    /*extra services end */
+    /* bestroom responsive start */
+    #bestRooms .item{
+        margin: 60px;    
+    }
+     /* bestroom responsive start */
+
+    /* delicious responsive start*/
+    .delicious{
+        overflow: hidden;
+    }
+    .delicious .disapear{
+        display: none;
+    }
+    .deli-content{
+        overflow: hidden;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.808);
+    }
+    #testi-content .title h1{
+        font-size: 100px;
+    }
+    #testimonials .item{
+        width: 400px;
+        margin-left: 50px;
+    }
+    /* footer responsive start  */
+    .footer{
+        height: 100%;
+        background-color: #222f4c;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* footer responsive start  */
+}
