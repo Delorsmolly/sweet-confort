@@ -91,4 +91,28 @@
         align-items: center;
     }
     /* footer responsive start  */
+    .overview .card{
+        margin-bottom: 50px;
+    }
+    /* icons services start */
+    .sup{
+        background-color: #f1f1f1;
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        width: 100% !important;
+        margin-left: 1px;
+        margin-bottom: 50px;
+    }
+    .sup .col-lg-2{
+        background-color: #fff;
+        display: block;
+        text-align: center;
+        width: calc(50% - 10px) !important;
+        flex-grow: 0;
+        margin: 5px;
+        padding: 15px 0 5px;    
+    }
+    /* icons services end */
 }
