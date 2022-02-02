@@ -59,3 +59,31 @@ const clients = [
         comment:"Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit, sed do eiusmod "
     }
 ]
+// list related rooms start
+const relatedRoom = [
+  {
+    image:"../images/rooms/1.jpg",
+    name:"Classique Room",
+    roomCondition:"4 adult(s) and 3 child(ren)",
+    desc:"This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ wa... ",
+    price:"$100.00",
+    link: "rooms/Classique-Room.Html"
+  },
+  {
+    image:"../images/rooms/2.jpg",
+    name:"VIP Room",
+    roomCondition:"2 adult(s) and 2 child(ren)",
+    desc:"This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ wa... ",
+    price:"$130.80",
+    link: "rooms/VIP-Room.Html"
+  },
+  {
+    image:"../images/Rooms/3.jpg",
+    name:"Hot Suit Rooms",
+    roomCondition:"2adult(s) and 1 child(ren)",
+    desc:"This comfortable, modern hotel is set in the urban center of Pontevedra, 10 minutes’ wa... ",
+    price:"$170.99",
+    link: "rooms/Hot-Suit-Rooms.Html"
+  },
+  
+];

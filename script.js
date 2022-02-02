@@ -49,8 +49,31 @@ $(function () {
             }
         }
     })
-
 });
+document.getElementById('related-area').innerHTML = `
+    ${relatedRoom.map(function  related(relRoom){
+        return `
+            <div class="col-lg-4">
+                <div class="card"">
+                    <div class="cardImg">
+                        <img src="${relRoom.image}" class="card-img-top" alt="...">
+                        <div class="check">
+                            <a href="${relRoom.link}"><button>Check Details <i class="fa fa-chevron-right" aria-hidden="true"></i></button></a>
+                        </div>
+                    </div>
+                    <span>${relRoom.price}/Night</span>
+                    <div class="m-4 text-justify">
+                        <h5 class="">${relRoom.name}</h5>
+                        <p class="card-text"><i class="fas fa-user-friends"></i>${relRoom.roomCondition}</p>
+                        <p class="card-text">${relRoom.desc}</p>
+                        <a href="${relRoom.link}" class="btn btn-primary">Book Now From ${relRoom.price}</a>
+                    </div>
+                </div>
+            </div>
+        `
+        
+    }).join("")}
+`
 // coonect the section BestRooms
 document.getElementById('bestRooms').innerHTML = `
     ${roomsData.map(function card(room) {
@@ -90,3 +113,13 @@ document.getElementById('slider').innerHTML = `
 }).join("")}
     
 `
+
+//     ${relatedRoom.map(function related(rooms){
+//         return`
+//             <div class="content-room">
+//             <img src="${rooms.image}">
+//             </div>
+//         `
+        
+//     }).join()};
+// `
