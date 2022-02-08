@@ -115,4 +115,7 @@
         padding: 15px 0 5px;    
     }
     /* icons services end */
+    #related-room .card{
+        width: 100% !important;
+    }
 }

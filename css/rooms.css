@@ -166,7 +166,7 @@
     width: 100%;
 }
 #related-area .card{
-    width: 400px !important;
+    width: 400px;
     height: 500px !important;
     box-shadow: 0 5px 25px #d5a419;
     position: relative;

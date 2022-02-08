@@ -32,29 +32,11 @@ $(function () {
             }
         }
     });
-    $('.overview .owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        dots:false,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:1
-            }
-        }
-    })
-});
-document.getElementById('related-area').innerHTML = `
+    document.getElementById('related-area').innerHTML = `
     ${relatedRoom.map(function  related(relRoom){
         return `
             <div class="col-lg-4">
-                <div class="card"">
+                <div class="card" style="width: 400px">
                     <div class="cardImg">
                         <img src="${relRoom.image}" class="card-img-top" alt="...">
                         <div class="check">
@@ -74,6 +56,25 @@ document.getElementById('related-area').innerHTML = `
         
     }).join("")}
 `
+    $('.overview .owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+});
+
 // coonect the section BestRooms
 document.getElementById('bestRooms').innerHTML = `
     ${roomsData.map(function card(room) {
@@ -113,7 +114,11 @@ document.getElementById('slider').innerHTML = `
 }).join("")}
     
 `
-
+const listItem = document.querySelectorAll('.list');
+       listItem.forEach((item)=>item.addEventListener('click', function activeLink(){
+        listItem.forEach((item)=>item.classList.remove('active'));
+         listItem.classList.add('active');
+       }));
 //     ${relatedRoom.map(function related(rooms){
 //         return`
 //             <div class="content-room">
