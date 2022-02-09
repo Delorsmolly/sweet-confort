@@ -18,30 +18,9 @@
     
 </head>
   <body class="bg-light">
-      <!-- bouton
-      <div class="btn btn-lg m-5 btn-danger">hey</div>
-      <!-- formulaire -->
-      <!-- <div class="container">
-          <form>
-              <div class="form-group row">
-                  <label for="inputName" class="col-sm-1-12 col-form-label">enter your first name</label>
-                  <div class="col-sm-1-12">
-                      <input type="text" class="form-control" name="inputName" id="inputName" placeholder="">
-                  </div>
-              </div>
-              <fieldset class="form-group row">
-                  <legend class="col-form-legend col-sm-1-12">Group name</legend>
-                  <div class="col-sm-1-12">
-                      
-                  </div>
-              </fieldset>
-              <div class="form-group row">
-                  <div class="offset-sm-2 col-sm-10">
-                      <button type="submit" class="btn btn-primary">Action</button>
-                  </div>
-              </div>
-          </form>
-      </div>  -->
+     <div id="preloader" class="preloader">
+      <div class="status"><img src="images/preloader.gif" alt=""></div>
+     </div>
 
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid nav-container">
@@ -261,6 +240,7 @@
     <script src="data.js"></script>
     <script src="script.js"></script>
     <script>
+    
         $(document).ready(function(){
                         // init Isotope
             var $grid = $('.Suits').isotope({
@@ -274,6 +254,15 @@
             $grid.isotope({ filter: filterValue });
             });
         });
+        // ?active section code
+       const listItem = document.querySelectorAll('.list');//assign the list to a variable
+       listItem.forEach((item)=>item.addEventListener('click', function activeLink(){
+        listItem.forEach((item)=>item.classList.remove('active'));
+         item.classList.add('active');
+       }));
+       //after window is loaded completely 
+        // window.onload =()=>document.querySelector(".preloader").style.display = "none"; 
+        setTimeout(()=>{document.querySelector(".preloader").style.display = "none";},2000)
     </script>
   </body>
 </html>

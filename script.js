@@ -114,17 +114,5 @@ document.getElementById('slider').innerHTML = `
 }).join("")}
     
 `
-const listItem = document.querySelectorAll('.list');
-       listItem.forEach((item)=>item.addEventListener('click', function activeLink(){
-        listItem.forEach((item)=>item.classList.remove('active'));
-         listItem.classList.add('active');
-       }));
-//     ${relatedRoom.map(function related(rooms){
-//         return`
-//             <div class="content-room">
-//             <img src="${rooms.image}">
-//             </div>
-//         `
-        
-//     }).join()};
-// `
+
+
