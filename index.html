@@ -18,9 +18,9 @@
     
 </head>
   <body class="bg-light">
-      <!-- bouton
-      <div class="btn btn-lg m-5 btn-danger">hey</div>
-      <!-- formulaire -->
+    <div id="preloader" class="preloader">
+      <div class="status"><img src="./images/preloader.gif" alt=""></div>
+    </div>
       <!-- <div class="container">
           <form>
               <div class="form-group row">
@@ -286,6 +286,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="data.js"></script>
     <script src="script.js"></script>
-    
+    <script>
+        // <!-- preloader start -->
+          setTimeout(()=>{document.querySelector(".preloader").style.display = "none";},2000);
+       // <!-- preloade end -->
+    </script>
+   
   </body>
 </html>
