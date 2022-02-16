@@ -44,29 +44,37 @@
       </div>  -->
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid nav-container">
-          <a class="navbar-brand" href="#"><img src="hotel.png" alt="" width="40px"> Sweet Confort</a>
+          <a class="navbar-brand" href="index.html"><img src="hotel.png" alt="" width="40px"> Sweet Confort</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars" aria-hidden="true"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="rooms&suits.html">ROOM AND SUITS</a>
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    ROOMS & SUITS
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item " href="roomsList.html">ROOMS LIST</a></li>
+                    <li><a class="dropdown-item" href="rooms&suits.html">ROOMS GRID</a></li>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">NEWS</a>
+                <a class="nav-link" href="news.html">NEWS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">GALLERY</a>
+                <a class="nav-link" href="gallery.html">GALLERY</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">ABOUT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="contact.html">CONTACT</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -287,6 +295,7 @@
     <script src="data.js"></script>
     <script src="script.js"></script>
     <script>
+      
         // <!-- preloader start -->
           setTimeout(()=>{document.querySelector(".preloader").style.display = "none";},2000);
        // <!-- preloade end -->

@@ -1,0 +1,13 @@
+/* Room List */
+#RoomList span{
+    background-color: #222f4c;
+    padding: 20px 120px;
+    color: #fff;
+}
+.cat-filters{
+    /* background-color: #222f4c; */
+    display: flex;
+    align-items: left;
+    font-size: 20px;
+    flex-direction: column;
+}

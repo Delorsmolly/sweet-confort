@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hotel</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.0.2 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css" integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="reponsive.css">
+    
+</head>
+  <body class="bg-light">
+     <div id="preloader" class="preloader">
+      <div class="status"><img src="images/preloader.gif" alt=""></div>
+     </div>
+      <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container-fluid nav-container">
+          <a class="navbar-brand" href="#"><img src="hotel.png" alt="" width="40px"> Sweet Confort</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    ROOMS & SUITS
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item " href="roomsList.html">ROOMS LIST</a></li>
+                    <li><a class="dropdown-item" href="rooms&suits.html">ROOMS GRID</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">NEWS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">GALLERY</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">ABOUT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">CONTACT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  EN
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Francais</a></li>
+                  <li><a class="dropdown-item" href="#">Espagnol</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Autres langues</a></li>
+                </ul>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li> -->
+            </ul>
+          </div>
+          <div class="btn btn-lg border-secondary">BOOK NOW</div>
+        </div>
+      </nav>
+      <!-- background start -->
+      <section class="background1">
+        <div class="container">
+            <h1>Contact </h1>
+        </div>
+      </section>
+      <!-- background end -->
+      <!-- contact afrea start -->
+      <section class="contact-area container my-5">
+        <div class="row">
+            <div class="col-lg-8">
+                 <div class="paragraph">
+                    <p>
+                        Waters midst. Creature man female. Them You’re female there his for first were have whose and blessed darkness his man Darkness had you’re hath fill were. Gathering may living moveth had evening called behold. Blessed darkness subdue he open she’d of void sea one let after light thing have creeping living the brought.
+                    </p>
+                 </div>
+                <form class="form" id="form" onsubmit="handleForm(); reset(); return false" >
+                    <div class="container">
+                        <div class="flex">
+                            <input type="text" class="form-control" id="name" placeholder="name" required>
+                            <input type="email" class="form-control" id="email" placeholder="email" required>
+                        </div>
+                        <input type="text" class=" form-control col-lg-6" id="number" placeholder="Phone number" required>
+                        <textarea class="form-control" id="message" rows="3" placeholder="enter your message"></textarea>
+                        <button type="submit" class="btn btn-lg btn-color">Send Message</button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="col-lg-4">
+                <div class="container map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7959.950266627195!2d9.695697471236093!3d4.025485490690996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x106112c7426691ff%3A0x310e860af24cda5!2sBonapriso%2C%20Douala!5e0!3m2!1sfr!2scm!4v1645008133565!5m2!1sfr!2scm" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- contact area end -->
+      <!-- footer start -->
+      <section class="footer">
+        <div class="container">
+          <div class="row footer-top">
+            <div class="col-lg-3">
+              <a class="navbar-brand" href="#"><img src="hotel.png" alt="" width="60px"> Sweet Confort</a>
+              <p>We always strive for growth and development as StylemixThemes. We don’t want to have a large team, we want to have a team that works in unity. Our slogan is “Every day is the last day”.</p>
+            </div>
+            <div class="col-lg-3">
+              <h3>Contact Us</h3>
+              <p>1010 Berkler avenue, Brooklyn, <br>
+                New York City, NY 10018 US <br><br>
+                
+                Tel.: +1 998 150 3020 <br>
+                Fax.: +1 998 150 3020 <br><br>
+                
+                info@stylemixthemes.com <br>
+                </p>
+            </div>
+            <div class="col-lg-3">
+              <h3> Stay In Touch</h3>
+              <span class="form-control">
+                <input type="text" placeholder="E-mail..."> <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+              </span>
+              <br>
+              <p>Enter your email address for promotions and news.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-lg-12">
+              <p>
+                Copyright © 2022 Hotel Plus Theme by StylemixThemes
+                </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- footer end -->
+
+    <!-- Bootstrap JavaScript Libraries -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- connectio to smtpjs API -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // window.onload =()=>document.querySelector(".preloader").style.display = "none"; 
+        setTimeout(()=>{document.querySelector(".preloader").style.display = "none";},2000);
+        // sending email
+        var name = document.getElementById('.name').value;
+        var email = document.getElementById('.email').value;
+        var number = document.getElementById('.number').value;
+        var message = document.getElementById('.message').value;
+        function handleForm(){
+            //     Email.send({
+            //     Host : "smtp.gmail.com",
+            //     Username : "delorsm6@gmail.com",
+            //     Password : "D29B704EED879BFF4713CA154F694998BF4E",
+            //     To : 'delorsm6@gmail.com',
+            //     From : email,
+            //     Subject : "New contact form message"+ name + "on hotel website",
+            //     Body : "And this is the body"
+            // }).then(
+            //     message => alert(message)
+            //     );
+            Email.send({
+            SecureToken : " 69d5c66b-048a-4b6b-b8d5-cdc532a65",
+            To : 'delorsm6@gmail.com',
+            From : document.getElementById('.email').value,
+            Subject : "This is the subject",
+            Body : "And this is the body"
+        }).then(
+        message => alert(message)
+        );
+        }
+     
+    </script>
+  </body>
+</html>
